@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="input.css">
+    
+</head>
+
+<body>
+    <header class="header">
+       
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-- replacment for header @ media queries width=700px -->
+     <div id="sidenavbar">
+        <div id ="mySidenav" class = "sidenav">
+            <a href = "javascript:void(0)" class ="closebtn"
+            onclick ="closeNav()">&times;</a>
+                <a href ="index.html">Home</a>
+                <a href ="project.html">Projects</a>
+                <a href ="about.html">About</a>
+                <a href ="contact.html">Contact</a>
+        </div>
+    
+        <span style ="font-size:30px;color: rgb(216, 17, 76);; cursor:pointer" onclick ="openNav()">&#9776</span>
+</div>
+     
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "200px";
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <main>
+        <section id="sect1" class="hero">
+            <img src="./images/female dev.jpg"  alt="My pics">
+            <div class="about">
+                <p >Hello, i am <span style="color:rgb(216, 17, 76)">Sandy.</span></p>
+                <p> I am a <span style="color:rgb(216, 17, 76)">Full Stack Web Developer,<br> a Graphics Designer</span> and much more...</p>
+             <!-- include your vision statement --><br>
+             <a id="intro" href ="contact.html">Contact Me</a>
+             <!-- <button id="intro" onclick="window.open('https://todolist.goodnewssandy.now.sh', '_blank')"></button>>Contact Me</button> -->
+        </section>
+
+        <section class="stack" >
+            <h2 class="indexh2"> My Stack</h2>
+        <p > I love to learn new technologies to expand my knowledge. </p>
+        <div class ="mystack">
+          <div class="icons">
+            <img src="./images/node.png" alt="node">
+            <p> Node JS</p>
+          </div>
+          <div class="icons">
+            <img src="./images/html5.png" alt="html5">
+            <p> Html5</p>
+          </div>
+          <div class="icons">
+            <img src="./images/css-3.png" alt="css-3">
+            <p> CSS3</p>
+          </div>
+          <div class="icons">
+            <img src="./images/javascript.png" alt="javascript">
+            <p> Javascript</p>
+          </div>
+          <div class="icons">
+            <img src="./images/git.png" alt="Git">
+            <p> Git</p>
+          </div>
+          <div class="icons">
+            <img src="./images/sass.png" alt="Python">
+            <p>Sass</p>
+          </div>
+          <div class="icons">
+            <img src="./images/python.png" alt="Python">
+            <p>Python</p>
+          </div>
+           
+        </div>
+    </section>
+
+        <section id="sect2" class="indexproject">
+            <h2 class="indexh2"> Featured Projects</h2>
+           
+            
+                <div class="colindex ">
+                    <div>
+                            <img src="./images/To do.jpg" alt="project1" >
+                            <p> To-do </p>
+                    </div>
+                    <div>
+                        <img src="./images/calculator.jpg" alt="project1">
+                        <p> Calculator </p>
+                    </div>
+                    <div>
+                        <img src="./images/heels14.jpeg" alt="project1" >
+                        <p> Shoe Gallery </p>
+                    </div>
+                    <div>
+                        <img src="./images/laptop3.jpg" alt="project1" >
+                        <p> ICT Training </p>
+                    </div>
+                </div>
+                <div class="viewprojects"> 
+                        <a href ="project.html">View Projects </a>
+                    <!-- <button id="intro">View Projects </button> -->
+                </div> 
+
+            
+    </section> 
+    
+    </main>
+
+    <footer>
+      
+        <div class="social">
+            <span id="footerP"> &copy; Sandy Goodnews 2019 All Rights Reserved +2348133429514</span>
+            <img src="./images/twitter.png" alt="twitter">
+            <img src="./images/facebook.png" alt="facebook">
+            <img src="./images/linkedin.png" alt="linkedin">
+            <img src="./images/instagram.png" alt="instagram">
+    
+        </div>
+    </footer> 
+
+ 
+</body>
+
+</html>

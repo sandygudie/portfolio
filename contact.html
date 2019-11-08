@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="input.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- <img src="" alt="Logo" id ="icon" width=""  height="">  -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- replacment for header @ media queries width=700px -->
+    <div id="sidenavbar">
+            <div id ="mySidenav" class = "sidenav">
+                <a href = "javascript:void(0)" class ="closebtn"
+                onclick ="closeNav()">&times;</a>
+                    <a href ="index.html">Home</a>
+                    <a href ="project.html">Projects</a>
+                    <a href ="about.html">About</a>
+                    <a href ="contact.html">Contact</a>
+            </div>
+        
+            <span style ="font-size:30px;color: rgb(216, 17, 76);; cursor:pointer" onclick ="openNav()">&#9776</span>
+    </div>
+         
+        <script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width = "200px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    <!-- Contact  -->
+    <h2 id="drop"> Drop a Message</h2>
+     <section id="sect3" class="Contact">
+         
+            <form data-dom="contact-form" name='contactForm'>
+                <input class="input_email" name="email" type="email" placeholder="Email">
+                <br />
+                <!-- <label for="message" >Message</label> -->
+                <br />
+                <textarea data-dom="input_textarea" class="textarea" name="message" id="message" cols="30" rows="10"
+                    placeholder="leave a message"></textarea>
+                <br />
+                <input id="submit" value="Send" type="submit" />
+            </form>
+        </section>
+
+       
+        <footer>
+                
+                <div class="social">
+                        <span id="footerP"> &copy; Sandy Goodnews 2019 All Rights Reserved +2348133429514</span>
+                    <img src="./images/twitter.png" alt="twitter">
+                    <img src="./images/facebook.png" alt="facebook">
+                    <img src="./images/linkedin.png" alt="linkedin">
+                    <img src="./images/instagram.png" alt="instagram">
+            
+                </div>
+            </footer>
+</body>
+</html>

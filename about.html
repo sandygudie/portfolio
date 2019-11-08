@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Page</title>
+    <link rel="stylesheet" href="input.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- <img src="" alt="Logo" id ="icon" width=""  height="">  -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- replacment for header @ media queries width=700px -->
+     <div id="sidenavbar">
+            <div id ="mySidenav" class = "sidenav">
+                <a href = "javascript:void(0)" class ="closebtn"
+                onclick ="closeNav()">&times;</a>
+                    <a href ="index.html">Home</a>
+                    <a href ="project.html">Projects</a>
+                    <a href ="about.html">About</a>
+                    <a href ="contact.html">Contact</a>
+            </div>
+        
+            <span style ="font-size:30px;color: rgb(216, 17, 76);; cursor:pointer" onclick ="openNav()">&#9776</span>
+    </div>
+         
+        <script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width = "200px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+    <main>
+            <div class="resumecontainer">
+
+                <h2 id="aboutname">Sandy Goodnews</h2>
+                
+                <!-- <h2 class="resume-h">About</h2> -->
+                <div class="resume">
+
+                <p class="resume-p">I am a passionate developer with  love for mathematics and coding. 
+                    With experience working on Javascript and applications, 
+                    I strive to create an impression on client projects to be more efficient, 
+                    creative, productive and fun.</p>
+    
+                <p class="resume-p">Along with my development work, I actively support inclusion and
+                    diversity in the S.T.E.M. industry through various community events,
+                    meetups, groups, and organizations.</p>
+                    
+                    <button class="resume-btn">View Resume </button>
+                </div>
+                
+
+              
+
+         </div>
+      
+    </main>
+    
+    <!-- <footer>
+            
+            <div class="social">
+                    <span id="footerP"> &copy; Sandy Goodnews 2019 All Rights Reserved +2348133429514  </span>
+                <img src="./images/twitter.png" alt="twitter">
+                <img src="./images/facebook.png" alt="facebook">
+                <img src="./images/linkedin.png" alt="linkedin">
+                <img src="./images/instagram.png" alt="instagram">
+        
+            </div>
+     </footer> -->
+    
+</body>
+
+</html>

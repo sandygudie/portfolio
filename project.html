@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project</title>
+    <link rel="stylesheet" href="input.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- replacment for header @ media queries width=700px -->
+     <div id="sidenavbar">
+            <div id ="mySidenav" class = "sidenav">
+                <a href = "javascript:void(0)" class ="closebtn"
+                onclick ="closeNav()">&times;</a>
+                    <a href ="index.html">Home</a>
+                    <a href ="project.html">Projects</a>
+                    <a href ="about.html">About</a>
+                    <a href ="contact.html">Contact</a>
+            </div>
+        
+            <span style ="font-size:30px;color: rgb(216, 17, 76);; cursor:pointer" onclick ="openNav()">&#9776</span>
+    </div>
+         
+        <script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width = "200px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+        <section id="sect2" class="project ">
+            <h2 id="myprojeccts"> My Projects</h2>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <img src="./images/To do.jpg" alt="project1" >
+                    <h3>To-Do-List App</h3>
+                    <p>  To add and edit To-do-list built with HTML, CSS, Javascript</p>
+                    <button   onclick="window.open('https://todolist.goodnewssandy.now.sh', '_blank')"> View Project </button>
+                </div>
+                <div class="col">
+                    <img src="./images/calculator.jpg" alt="project2">
+                    <div>
+                        <h3>Calculator</h3>
+                        <p>Built a pocket calculator using HTML,CSS and Javascript</p>
+                        <button  onclick="window.open('https://calculator-kb5rksuaj.now.sh', '_blank')">View Project </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/heels14.jpeg" alt="project3">
+                    <h3>Shoe Gallery Website</h3>
+                    <p>Website to display women footWears built with HTML and CSS </p>
+                    <button onclick="window.open('https://todolist.goodnewssandy.now.sh', '_blank')">View Project </button>
+                </div>
+                <div class="col">
+                    <img src="./images/laptop3.jpg" alt="project3">
+                    <h3>Computer Training Website</h3>
+                    <p> A computer training company website built HTML and CSS</p>
+                    <button  onclick="window.open('https://todolist.goodnewssandy.now.sh', '_blank')">View Project</button>
+                </div> 
+
+            </div>
+        </section>
+        <script>
+        
+        </script>
+
+        <!-- <footer>
+                
+                <div class="social">
+                        <span id="footerP"> &copy; Sandy Goodnews 2019 All Rights Reserved +2348133429514</span>
+                    <img src="./images/twitter.png" alt="twitter">
+                    <img src="./images/facebook.png" alt="facebook">
+                    <img src="./images/linkedin.png" alt="linkedin">
+                    <img src="./images/instagram.png" alt="instagram">
+            
+                </div>
+            </footer> -->
+</body>
+</html>
