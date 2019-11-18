@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -37,29 +37,22 @@
             <span style ="font-size:30px;color: rgb(216, 17, 76);; cursor:pointer" onclick ="openNav()">&#9776</span>
     </div>
          
-        <script>
-            function openNav(){
-                document.getElementById("mySidenav").style.width = "200px";
-            }
-            function closeNav(){
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
+        <script src="app.js"></script>
 
 
     <!-- Contact  -->
     <h2 id="drop"> Drop a Message</h2>
      <section id="sect3" class="Contact">
          
-            <form data-dom="contact-form" name='contactForm'>
-                <input class="input_email" name="email" type="email" placeholder="Email">
+            <form data-dom="contact-form" name='contactForm' action="message.html" onsubmit="return onvalidate()" method="post">
+                <input class="input_email"data-dom="input_email"  name="email" type="email" placeholder="Email" required>
                 <br />
                 <!-- <label for="message" >Message</label> -->
                 <br />
                 <textarea data-dom="input_textarea" class="textarea" name="message" id="message" cols="30" rows="10"
-                    placeholder="leave a message"></textarea>
+                    placeholder="leave a message" required></textarea>
                 <br />
-                <input id="submit" value="Send" type="submit" />
+                <input id="submit" value="Send" type="submit" onclick="" />
             </form>
         </section>
 
