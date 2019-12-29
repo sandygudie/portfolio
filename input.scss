@@ -22,9 +22,17 @@ header{
 .navbar{
     display:flex;
     position:fixed;
-    left:50%;
+    left:0%;
     right:0;
     padding-top: 10px;
+    background-color: white;
+    z-index: 1;
+     
+    ul{
+      position: relative;
+      left: 50em;
+      z-index: 1
+  }
     li { 
         display: inline;
         padding: 10px 40px 0 30px;
@@ -230,34 +238,53 @@ a{
 
 
 // my projects page
+
+.projecthead{
+  // width:200px;
+  height:120px;
+  padding-top: 3em;
+  background-color:$light; 
+ position: fixed;
+ left: 0;
+ right: 0;
+}
+
+#myprojects {
+  text-align: center;
+  font-size: 40px;
+  // padding: 20px;
+  color: #d8114c;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height:1;
+  //  position: fixed;
+  padding: 0.2em;
+  
+}
+
 .project {
-    padding-top: 30px;
+    padding-top: 12em;
     padding-bottom: 20px;
     height: auto;
     background-color:$light; 
-    #myprojeccts {
-        text-align: left;
-        font-size: 40px;
-        padding: 20px;
-        color: #d8114c;
-        font-size: 50px;
-        font-weight: bolder;
-        line-height:1;
-      } 
+     
   }
+  
 .row{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
-    padding-left: 150px;
+    // padding-left: 150px;
+    margin:auto
 }
 .col {
+  padding-right:5em;
         img{
             border-radius: 40%;  
             width : 300px;
             height: 300px;
             padding-top: 10px;
-            padding-left: 30px;
+            // padding-left: 30px;
           }
         h3{
         font-weight:bolder;
@@ -267,9 +294,9 @@ a{
       }
         p{
         font-size:20px;
-          margin: 5px 30px;
+          // margin: 5px 30px;
           font-family: sans-serif;
-          width: 60%;
+          width: 15em;
       }
       button{
         width:150px;
@@ -403,12 +430,17 @@ footer .social{
   form .input_email {
     width: 100%;
   }
-
+//   .projecthead{
+    
+    
+// }
   #aboutname{
     padding-left: 20px;
   }  
   #sidenavbar{
-    display:block
+    display:block;
+    position: fixed;
+    z-index: 1;
   }
     
   header{
@@ -451,6 +483,8 @@ footer .social{
 
   #sidenavbar{
     display:block;
+    position: fixed;
+    z-index: 1;
   }
   header{
     display:none;

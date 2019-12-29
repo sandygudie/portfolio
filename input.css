@@ -20,9 +20,17 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 50%;
+  left: 0%;
   right: 0;
   padding-top: 10px;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar ul {
+  position: relative;
+  left: 50em;
+  z-index: 1;
 }
 
 .navbar li {
@@ -242,21 +250,30 @@ header {
   color: white;
 }
 
-.project {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  height: auto;
+.projecthead {
+  height: 120px;
+  padding-top: 3em;
   background-color: #f8eee7;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
-.project #myprojeccts {
-  text-align: left;
+#myprojects {
+  text-align: center;
   font-size: 40px;
-  padding: 20px;
   color: #d8114c;
   font-size: 50px;
   font-weight: bolder;
   line-height: 1;
+  padding: 0.2em;
+}
+
+.project {
+  padding-top: 12em;
+  padding-bottom: 20px;
+  height: auto;
+  background-color: #f8eee7;
 }
 
 .row {
@@ -267,7 +284,11 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-left: 150px;
+  margin: auto;
+}
+
+.col {
+  padding-right: 5em;
 }
 
 .col img {
@@ -275,7 +296,6 @@ header {
   width: 300px;
   height: 300px;
   padding-top: 10px;
-  padding-left: 30px;
 }
 
 .col h3 {
@@ -287,9 +307,8 @@ header {
 
 .col p {
   font-size: 20px;
-  margin: 5px 30px;
   font-family: sans-serif;
-  width: 60%;
+  width: 15em;
 }
 
 .col button {
@@ -434,6 +453,8 @@ footer .social img {
   }
   #sidenavbar {
     display: block;
+    position: fixed;
+    z-index: 1;
   }
   header {
     display: none;
@@ -466,6 +487,8 @@ footer .social img {
   }
   #sidenavbar {
     display: block;
+    position: fixed;
+    z-index: 1;
   }
   header {
     display: none;
