@@ -49,7 +49,10 @@ header{
 
 // side header
 #sidenavbar{
-    display:none;
+    // display:none;
+    position: fixed;
+    z-index:1;
+    
     .sidenav{
         height: 100%;
         width:0;
@@ -87,8 +90,10 @@ header{
     flex-wrap:wrap;
      height: 90%; 
     background-color: rgb(224, 223, 223); 
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 14% 15%;
+  
+    // position:absolute;
+    top:0;
     img{
         border-radius: 100%; 
         width : 15em;
@@ -129,6 +134,7 @@ text-align:center;
 height:auto;
 margin-top:10px;
 margin-bottom:50px;
+padding: 10px;
 .indexh2{
     text-align: center;
     font-size: 40px;
@@ -147,12 +153,12 @@ p{
     display:flex;
     flex-wrap: wrap;  
     margin:auto;
-    padding-top:20px;  
+    padding:20px;  
     }
 }
 
 .icons{ 
-   padding-right: 60px;
+   padding-right: 50px;
     margin-bottom: 20px;
     margin-Top: 20px;
     img {
@@ -247,6 +253,7 @@ a{
  position: fixed;
  left: 0;
  right: 0;
+
 }
 
 #myprojects {
@@ -278,7 +285,7 @@ a{
     margin:auto
 }
 .col {
-  padding-right:5em;
+   padding-right:4em;
         img{
             border-radius: 40%;  
             width : 300px;
@@ -291,6 +298,7 @@ a{
         font-size:20px;
          margin: 5px 30px;
          font-family: sans-serif;
+         text-align: center;
       }
         p{
         font-size:20px;
@@ -432,16 +440,18 @@ footer .social{
   }
 //   .projecthead{
     
-    
-// }
+  .col {
+    padding: 0em 0em 2em 2em;
+ }
+ 
   #aboutname{
     padding-left: 20px;
   }  
-  #sidenavbar{
-    display:block;
-    position: fixed;
-    z-index: 1;
-  }
+  // #sidenavbar{
+  //   display:block;
+  //   position: fixed;
+  //   z-index: 1;
+  // }
     
   header{
       display:none

@@ -48,7 +48,8 @@ header {
 }
 
 #sidenavbar {
-  display: none;
+  position: fixed;
+  z-index: 1;
 }
 
 #sidenavbar .sidenav {
@@ -95,8 +96,8 @@ header {
       flex-wrap: wrap;
   height: 90%;
   background-color: #e0dfdf;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding: 14% 15%;
+  top: 0;
 }
 
 .hero img {
@@ -142,6 +143,7 @@ header {
   height: auto;
   margin-top: 10px;
   margin-bottom: 50px;
+  padding: 10px;
 }
 
 .stack .indexh2 {
@@ -166,11 +168,11 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .icons {
-  padding-right: 60px;
+  padding-right: 50px;
   margin-bottom: 20px;
   margin-Top: 20px;
 }
@@ -288,7 +290,7 @@ header {
 }
 
 .col {
-  padding-right: 5em;
+  padding-right: 4em;
 }
 
 .col img {
@@ -303,6 +305,7 @@ header {
   font-size: 20px;
   margin: 5px 30px;
   font-family: sans-serif;
+  text-align: center;
 }
 
 .col p {
@@ -448,13 +451,11 @@ footer .social img {
   form .input_email {
     width: 100%;
   }
+  .col {
+    padding: 0em 0em 2em 2em;
+  }
   #aboutname {
     padding-left: 20px;
-  }
-  #sidenavbar {
-    display: block;
-    position: fixed;
-    z-index: 1;
   }
   header {
     display: none;
